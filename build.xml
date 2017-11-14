@@ -6,7 +6,7 @@
     
     <!-- Deploying -->
     <target name="deployOnly">
-    	<sf:deploy username="${sf.username}" password="${sf.password}" 
+    	<sf:deploy username="${sf.username}" password="${sf.password}" logType="Detail"
     			serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true"/>
     </target>
 </project>
